@@ -1,0 +1,45 @@
+gymnasium 1.3.0
+tensorflow 2.21.0
+numpy 2.4.4
+=== sanity baseline: 24/24, no target net, seed=0 ===
+  ep  20 | last20_avg=  21.5 | roll100=  21.5 | eps=0.905
+  ep  40 | last20_avg=  21.6 | roll100=  21.6 | eps=0.818
+  ep  60 | last20_avg=  19.6 | roll100=  20.9 | eps=0.740
+  ep  80 | last20_avg=  21.5 | roll100=  21.1 | eps=0.670
+  ep 100 | last20_avg=  38.5 | roll100=  24.6 | eps=0.606
+  ep 120 | last20_avg=  39.9 | roll100=  28.2 | eps=0.548
+  ep 140 | last20_avg=  67.2 | roll100=  37.3 | eps=0.496
+  ep 160 | last20_avg= 111.2 | roll100=  55.7 | eps=0.448
+  ep 180 | last20_avg= 187.2 | roll100=  88.8 | eps=0.406
+  ep 200 | last20_avg= 247.3 | roll100= 130.6 | eps=0.367
+  SOLVED at ep 218
+
+solved_at: 218
+final 100-ep avg: 196.04
+elapsed: 532.2s (8.9 min)
+episodes run: 218
+/Users/emecheverria/Coding/Reinforcement Learning/hw3/Assignment3_Part2_DQN_Experiments.py:203: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+=== width sweep: 16/16, seed=0 ===
+  -> solved_at=264, final_avg=196.8, elapsed=745s
+=== width sweep: 16/16, seed=1 ===
+  -> solved_at=None, final_avg=169.3, elapsed=815s
+  SUMMARY 16/16: solved@264.0±0.0 final=183.0±13.7 (1/2)
+
+=== width sweep: 24/24, seed=0 ===
+  -> solved_at=218, final_avg=196.0, elapsed=704s
+=== width sweep: 24/24, seed=1 ===
+  -> solved_at=229, final_avg=195.3, elapsed=726s
+  SUMMARY 24/24: solved@223.5±5.5 final=195.7±0.4 (2/2)
+
+=== width sweep: 64/64, seed=0 ===
+  -> solved_at=263, final_avg=196.4, elapsed=868s
+=== width sweep: 64/64, seed=1 ===
+  -> solved_at=None, final_avg=134.3, elapsed=762s
+  SUMMARY 64/64: solved@263.0±0.0 final=165.4±31.0 (1/2)
+
+/Users/emecheverria/Coding/Reinforcement Learning/hw3/Assignment3_Part2_DQN_Experiments.py:242: UserWarning: FigureCanvasAgg is non-interactive, and thus cannot be shown
+  plt.show()
+best width from Experiment 1: 24/24
+=== target sweep: no target net, seed=0 ===
+/var/folders/nc/9t0zhm_50rx_blvdnr0tfy7w0000gn/T/tmpt3ibf7nt: line 3: 44661 Killed: 9               python -u Assignment3_Part2_DQN_Experiments.py

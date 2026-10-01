@@ -1,0 +1,20 @@
+=== FINAL TUNED RUN: 24/24, no target net, seed=42 ===
+  ep  20 | last20=  19.8 | roll100=  19.8 | eps=0.905
+  ep  40 | last20=  18.1 | roll100=  18.9 | eps=0.818
+  ep  60 | last20=  19.9 | roll100=  19.2 | eps=0.740
+  ep  80 | last20=  27.8 | roll100=  21.4 | eps=0.670
+  ep 100 | last20=  36.4 | roll100=  24.4 | eps=0.606
+  ep 120 | last20=  42.0 | roll100=  28.8 | eps=0.548
+  ep 140 | last20=  49.4 | roll100=  35.1 | eps=0.496
+  ep 160 | last20=  82.2 | roll100=  47.5 | eps=0.448
+  ep 180 | last20= 120.5 | roll100=  66.1 | eps=0.406
+  ep 200 | last20= 263.3 | roll100= 111.5 | eps=0.367
+  ep 220 | last20= 353.2 | roll100= 173.7 | eps=0.332
+  SOLVED at ep 230
+
+training: solved_at=230, final_avg=195.23, elapsed=626.6s (10.4 min)
+
+=== 100-EPISODE GREEDY EVAL ===
+greedy eval over 100 eps: 349.10 ± 21.77 (PASS vs 195.0)
+
+Saved: final_tuned_dqn.weights.h5, final_tuned_results.npz
